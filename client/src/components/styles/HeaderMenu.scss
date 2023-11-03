@@ -1,0 +1,34 @@
+@import "@sass/imports.scss";
+
+#header__menu {
+  display: flex;
+  align-items: center;
+
+  & > * {
+    margin: 0 0.5rem;
+  }
+}
+
+#logo {
+  max-width: 3rem;
+  margin: 0 1rem;
+}
+
+.btn__header--menu {
+    padding: 0.7rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    &:hover {
+      color: $color-1;
+      border-bottom: 2px solid $color-1;
+    }
+    &:active {
+      filter: brightness(0.99);
+      transform: scale(0.99);
+    }
+  }
+  

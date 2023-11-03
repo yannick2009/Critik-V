@@ -1,0 +1,40 @@
+@import "@sass/imports.scss";
+
+#header__profil {
+  display: flex;
+  align-items: center;
+  & > * {
+    margin: 0 0.5rem;
+  }
+  img {
+    max-width: 2rem;
+    border-radius: 100px;
+  }
+  .profil {
+    border-radius: 100px;
+    display: flex;
+    place-items: center;
+    padding: 0.2rem;
+    background: transparent;
+    border: 2px solid $color-1;
+    cursor: pointer;
+  }
+}
+
+.btn__header--profil {
+  background: $color-1;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0.7rem 1rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  &:hover {
+    transform: scale(1.01);
+  }
+  &:active {
+    filter: brightness(0.99);
+    transform: scale(0.99);
+  }
+}
