@@ -3,8 +3,8 @@ header {
   height: fit-content;
   background-color: white;
   border-bottom: 1px solid #e6e6e6;
-  position: fixed;
-  padding: 1rem;
+  position: sticky;
+  padding: 0.7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

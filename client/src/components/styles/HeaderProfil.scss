@@ -20,21 +20,3 @@
     cursor: pointer;
   }
 }
-
-.btn__header--profil {
-  background: $color-1;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  padding: 0.7rem 1rem;
-  font-weight: 500;
-  color: white;
-  border-radius: 10px;
-  &:hover {
-    transform: scale(1.01);
-  }
-  &:active {
-    filter: brightness(0.99);
-    transform: scale(0.99);
-  }
-}
