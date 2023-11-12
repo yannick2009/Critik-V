@@ -22,12 +22,13 @@
   background: transparent;
   border-bottom: 2px solid transparent;
   cursor: pointer;
-  &:hover {
-    color: $color-1;
-    border-bottom: 2px solid $color-1;
-  }
   &:active {
     filter: brightness(0.99);
     transform: scale(0.99);
   }
+}
+
+.actived {
+  color: $color-1;
+  border-bottom: 2px solid $color-1;
 }

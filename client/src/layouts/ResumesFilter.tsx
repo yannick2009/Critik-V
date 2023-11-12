@@ -1,12 +1,26 @@
 import "./styles/ResumesFIlter.scss";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ResumesFilter() {
   return (
     <div id="resumes__filter">
       <div className="part__1">
-        <button className="btn__active">Tous les CV</button>
-        <button>Mes favoris</button>
-        <button>Mes CV</button>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) => (isActive ? "btn__active" : undefined)}>
+          <button>Tous les CV</button>
+        </NavLink>
+        <NavLink
+          to={"favoris"}
+          className={({ isActive }) => (isActive ? "btn__active" : undefined)}>
+          <button>Mes favoris</button>
+        </NavLink>
+        <NavLink
+          to={"my-resume"}
+          className={({ isActive }) => (isActive ? "btn__active" : undefined)}>
+          <button>Mes CV</button>
+        </NavLink>
       </div>
       <div className="part__2">
         <form>
@@ -25,7 +39,9 @@ export default function ResumesFilter() {
             <option value="Recent">Les plus commentés</option>
           </select>
         </form>
-        <button className="btn__upload">Uploader CV</button>
+        <Link to="/upload-resume">
+          <button className="btn__upload">Uploader CV</button>
+        </Link>
       </div>
     </div>
   );

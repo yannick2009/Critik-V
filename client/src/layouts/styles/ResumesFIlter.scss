@@ -47,8 +47,11 @@
 }
 
 .btn__active {
-  color: $color-1 !important;
-  background: rgba(8, 191, 185, 0.15) !important;
+  button {
+    color: $color-1 !important;
+    background: rgba(8, 191, 185, 0.15) !important;
+    border-radius: 10px !important;
+  }
 }
 
 .btn__upload {

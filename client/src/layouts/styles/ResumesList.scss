@@ -1,10 +1,10 @@
-#resumes__list {
-  //   background: blue;
+.resumes__list {
   padding: 1rem;
   height: fit-content;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-rows: repeat(5, auto);
   gap: 0.5rem;
+  position: relative;
 }
