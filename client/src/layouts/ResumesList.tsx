@@ -1,5 +1,6 @@
 import "./styles/ResumesList.scss";
-import Resume from "@/components/Resume";
+import Resume from "@components/Resume";
+import Pagination from "@components/Pagination";
 
 export default function ResumesList() {
   return (
@@ -9,6 +10,7 @@ export default function ResumesList() {
       <Resume />
       <Resume />
       <Resume />
+      <Pagination />
     </div>
   );
 }
