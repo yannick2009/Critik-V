@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import "./App.scss";
 import Header from "@layouts/Header";
 import Resumes from "@/pages/Resumes";
+import Upload from "@/pages/Upload";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ResumesList from "@layouts/ResumesList";
 import MyResumesList from "@layouts/MyResumesList";
@@ -63,11 +64,7 @@ const router = createBrowserRouter([
       },
       {
         path: "upload-resume",
-        element: (
-          <div>
-            <p>Upload CV</p>
-          </div>
-        ),
+        element: <Upload />,
       },
     ],
   },
