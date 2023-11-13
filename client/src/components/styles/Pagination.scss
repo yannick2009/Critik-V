@@ -12,5 +12,16 @@
     &:not(:first-child) {
       border-left: 0.5px dashed #ccc;
     }
+
+    &:not(:nth-child(2)) {
+      @include btn-effect;
+      &:active {
+        outline: 2px solid $color-1;
+        filter: brightness(1.1);
+        i {
+          color: $color-1;
+        }
+      }
+    }
   }
 }

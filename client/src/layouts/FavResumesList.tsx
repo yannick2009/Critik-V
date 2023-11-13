@@ -1,10 +1,13 @@
 import "./styles/ResumesList.scss";
-import Resume from "@/components/Resume";
+import Empty from "@/components/Empty";
 
 export default function FavResumesList(): JSX.Element {
   return (
     <div className="resumes__list">
-      <Resume />
+      <Empty
+        label="Aucun CV dans vos favoris"
+        text="Mettez des etoiles au CV qui vous plaisent"
+      />
     </div>
   );
 }

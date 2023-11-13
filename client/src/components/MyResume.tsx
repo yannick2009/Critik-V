@@ -1,6 +1,6 @@
 import "./styles/Resume.scss";
 
-export default function Resume() {
+export default function MyResume(): JSX.Element {
   return (
     <div className="resume">
       <div className="part__1">
@@ -26,11 +26,14 @@ export default function Resume() {
       </div>
       <div className="part__3">
         <p>Uploadé il y a 1 jour par Yannick KOUAKOU</p>
-        <p>ESATIC, Côte d'Ivoire</p>
+        <p>Côte d'Ivoire</p>
       </div>
-      <div className="part__4">
+      <div className="part__5">
         <button>
-          <i className="fa-solid fa-chevron-right"></i>
+          <i className="fa-solid fa-pencil"></i>
+        </button>
+        <button>
+          <i className="fa-solid fa-trash-can"></i>
         </button>
       </div>
     </div>

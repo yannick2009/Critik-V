@@ -1,6 +1,6 @@
 @import "@sass/imports.scss";
 
-#resume {
+.resume {
   width: 100%;
   padding: 0.7rem 1rem;
   background: white;
@@ -11,7 +11,7 @@
   border-radius: 10px;
 }
 
-#resume .part__1 {
+.resume .part__1 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 1fr;
@@ -39,7 +39,7 @@
   }
 }
 
-#resume .part__2 {
+.resume .part__2 {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -56,7 +56,7 @@
   }
 }
 
-#resume .part__3 {
+.resume .part__3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@
   }
 }
 
-#resume .part__4 {
+.resume .part__4 {
   display: flex;
   align-items: center;
   justify-content: end;
@@ -88,5 +88,24 @@
     outline: none;
     background: #d4f1f2;
     @include btn-effect;
+  }
+}
+
+.resume .part__5 {
+  @extend .part__4;
+  button {
+    margin: 0 0.3rem;
+    &:first-child {
+      background: #d4d8f271;
+      i {
+        color: #a4affc;
+      }
+    }
+    &:last-child {
+      background: #f2d4d490;
+      i {
+        color: #f15151;
+      }
+    }
   }
 }
