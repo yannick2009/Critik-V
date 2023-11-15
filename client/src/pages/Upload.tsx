@@ -57,33 +57,37 @@ export default function Upload(): JSX.Element {
       {/* FORM TO UPLOAD THE RESUME */}
       <form>
         {/* POST TITLE */}
-        <label htmlFor="">
+        <label htmlFor="upload_title">
           Titre <span>*</span>
         </label>
-        <input type="text" id="" name="" />
+        <input type="text" id="upload_title" name="upload_title" />
         {/* PLACEMENT TYPE */}
-        <label htmlFor="">
+        <label htmlFor="upload_job_type">
           Type d'emploi <span>*</span>
         </label>
-        <select name="" id="">
+        <select name="upload_job_type" id="upload_job_type">
           <option value="stage">Stage</option>
           <option value="cdd">CDD</option>
           <option value="cdi">CDI</option>
         </select>
         {/* EXPERIENCE YEARS */}
-        <label htmlFor="">
+        <label htmlFor="upload_job_experience">
           Niveau d'expérience <span>*</span>
         </label>
-        <select name="" id="">
+        <select name="upload_job_experience" id="upload_job_experience">
           <option value="stage">Débutant (0 - 2 ans)</option>
           <option value="cdd">Junior</option>
           <option value="cdi">Senior</option>
         </select>
         {/* SCHOOL / WORK */}
-        <label htmlFor="">Votre étbalissement</label>
-        <input type="text" name="" id="" />
+        <label htmlFor="upload_establishement">Votre étbalissement</label>
+        <input
+          type="text"
+          name="upload_establishement"
+          id="upload_establishement"
+        />
         {/* RESUME FILE */}
-        <label htmlFor="">
+        <label htmlFor="upload-field">
           CV <span>*</span>
         </label>
         <div
