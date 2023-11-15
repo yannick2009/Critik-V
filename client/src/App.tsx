@@ -8,6 +8,7 @@ import ResumesList from "@layouts/ResumesList";
 import MyResumesList from "@layouts/MyResumesList";
 import FavResumesList from "@layouts/FavResumesList";
 
+// ROUTER
 const router = createBrowserRouter([
   {
     path: "/",
@@ -70,6 +71,7 @@ const router = createBrowserRouter([
   },
 ]);
 
+// FINAL RENDER
 function App(): JSX.Element {
   return <RouterProvider router={router} />;
 }
