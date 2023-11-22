@@ -1,0 +1,20 @@
+{
+  "name": "critik-v-server",
+  "version": "1.0.0",
+  "description": "critik-v server ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/app.ts",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/app.js"
+  },
+  "author": "KOUAKOU KOUAME YANNICK",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.4",
+    "prisma": "^5.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
