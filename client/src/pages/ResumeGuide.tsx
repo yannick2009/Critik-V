@@ -1,5 +1,5 @@
 import "./styles/ResumeGuide.scss";
-import img from "@assets/img/coffre-fort.png";
+import img from "@assets/img/coffre-fort.webp";
 
 const title: string = "Guide du CV";
 const text: string =
