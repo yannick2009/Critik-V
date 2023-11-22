@@ -1,12 +1,14 @@
 import { Fragment } from "react";
 import "./App.scss";
 import Header from "@layouts/Header";
-import Resumes from "@/pages/Resumes";
-import Upload from "@/pages/Upload";
+import Resumes from "@pages/Resumes";
+import Upload from "@pages/Upload";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import ResumesList from "@layouts/ResumesList";
 import MyResumesList from "@layouts/MyResumesList";
 import FavResumesList from "@layouts/FavResumesList";
+import AboutUs from "@pages/AboutUs";
+import ResumeGuide from "@pages/ResumeGuide";
 
 // ROUTER
 const router = createBrowserRouter([
@@ -49,19 +51,11 @@ const router = createBrowserRouter([
       },
       {
         path: "resume-guide",
-        element: (
-          <div>
-            <p>Guide du CV</p>
-          </div>
-        ),
+        element: <ResumeGuide />,
       },
       {
         path: "about-us",
-        element: (
-          <div>
-            <p>à propos de nous</p>
-          </div>
-        ),
+        element: <AboutUs />,
       },
       {
         path: "upload-resume",
