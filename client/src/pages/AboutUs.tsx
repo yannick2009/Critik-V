@@ -13,25 +13,27 @@ const link: LinkType = {
   twitter: "https://twitter.com/baby_desiigner",
 };
 
-export default function AboutUs() {
+const fullname: string = "kouakou kouame yannick";
+const job: string = "Fullstack Developer";
+const text: string = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+quis doloribus, dolore aliquam molestiae numquam, inventore ut
+voluptates quo, perferendis provident explicabo quibusdam. Inventore
+possimus eum eligendi, non nihil dolorem. Lorem ipsum dolor sit amet
+consectetur adipisicing elit. Commodi quis doloribus, dolore aliquam
+molestiae numquam, inventore ut voluptates quo, perferendis
+provident explicabo quibusdam. Inventore possimus eum eligendi, non
+nihil dolorem. Lorem ipsum dolor sit amet consectetur adipisicing
+elit. Commodi quis doloribus, rendis provident explicabo quibusdam.
+Inventore possimus eum eligendi, non nihil dolorem.`;
+
+export default function AboutUs(): JSX.Element {
   return (
     <section id="aboutUs">
       <div className="container">
         <div className="container__text">
-          <h1>kouakou kouame yannick</h1>
-          <h4>Fullstack Developer</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            quis doloribus, dolore aliquam molestiae numquam, inventore ut
-            voluptates quo, perferendis provident explicabo quibusdam. Inventore
-            possimus eum eligendi, non nihil dolorem. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Commodi quis doloribus, dolore aliquam
-            molestiae numquam, inventore ut voluptates quo, perferendis
-            provident explicabo quibusdam. Inventore possimus eum eligendi, non
-            nihil dolorem. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Commodi quis doloribus, rendis provident explicabo quibusdam.
-            Inventore possimus eum eligendi, non nihil dolorem.
-          </p>
+          <h1>{fullname}</h1>
+          <h4>{job}</h4>
+          <p>{text}</p>
         </div>
         <div className="container__illustration">
           <div className="photo">
