@@ -9,6 +9,7 @@ import MyResumesList from "@layouts/MyResumesList";
 import FavResumesList from "@layouts/FavResumesList";
 import AboutUs from "@pages/AboutUs";
 import ResumeGuide from "@pages/ResumeGuide";
+import SingleResume from "@pages/SingleResume";
 
 // ROUTER
 const router = createBrowserRouter([
@@ -43,11 +44,7 @@ const router = createBrowserRouter([
       },
       {
         path: ":resumeId",
-        element: (
-          <div>
-            <p>Yannick</p>
-          </div>
-        ),
+        element: <SingleResume />,
       },
       {
         path: "resume-guide",
