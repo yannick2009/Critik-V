@@ -1,11 +1,13 @@
 import express, { Application, Response, Request } from "express";
 import morgan from "morgan";
-const app: Application = express();
+import errorHandler from "./errors/errorHandler";
 
+const app: Application = express();
 // ========== Middlewares ==========
 app.use(morgan("dev"));
-app.use<Response>(express.json());
-app.use<Request, Response>(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(errorHandler);
 
 // ========== Export ==========
 export default app;
