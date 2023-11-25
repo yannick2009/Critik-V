@@ -1,0 +1,50 @@
+@import "@sass/imports";
+
+.comment {
+  border-radius: 10px;
+  width: 90%;
+  margin: 0.3rem auto;
+  height: fit-content;
+  padding: 0.7rem 1rem;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & > * {
+    margin: 0.2rem 0;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 0.7rem;
+    }
+    p:first-child {
+      color: grey;
+    }
+  }
+  &__content {
+    p {
+      text-align: justify;
+      font-size: 0.8rem;
+      color: $black-text;
+    }
+  }
+  &__like {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.7rem;
+    & > * {
+      margin: 0 0.2rem;
+    }
+    button {
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: $color-1;
+    }
+  }
+}
