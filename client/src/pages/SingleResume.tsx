@@ -1,27 +1,23 @@
+import ReviewsComments from "@/components/ReviewsComments";
 import "./styles/SingleResume.scss";
-// import resumePDF from "@assets/docs/resume.pdf";
 
 export default function SingleResume(): JSX.Element {
   // RETUN
   return (
     <section id="singleResume">
       {/* PDF VIEW IN THIS SECTION */}
-      <div className="pdf_viewer">
-        {/* <object
-          data={`${resumePDF}#toolbar=1&zoom=70`}
-          type="application/pdf"></object> */}
-      </div>
+      <div className="pdf_viewer"></div>
       {/* REVIEW BY OTHERS ON THE RESUME | MY REVIEWS */}
       <div className="reviews">
-        <div className="reviews_header">
-          <div className="reviews_header_switcher">
-            <button>informations</button>
-            <button>Commentaires</button>
-          </div>
+        <div className="reviews__header">
+          <button className="info">
+            <i className="fa-solid fa-circle-info"></i> En savoir plus
+          </button>
           <button className="like">
             <i className="fa-regular fa-star"></i> Liker
           </button>
         </div>
+        <ReviewsComments />
       </div>
     </section>
   );

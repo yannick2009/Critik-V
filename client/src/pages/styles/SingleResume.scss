@@ -16,13 +16,14 @@
 
 #singleResume .reviews {
   display: flex;
-  position: relative;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
   & > * {
     width: 100%;
   }
 
-  &_header {
+  &__header {
     background: white;
     height: fit-content;
     position: sticky;
@@ -31,9 +32,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
     button {
       padding: 0.7rem 1rem;
+      @include btn-effect;
+    }
+
+    button.info {
+      border: 0;
+      color: $color-1;
+      padding: 0.5rem;
+      background: transparent;
+      border-radius: 10px;
     }
 
     button.like {
