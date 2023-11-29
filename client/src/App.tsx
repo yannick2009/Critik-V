@@ -10,6 +10,8 @@ import FavResumesList from "@layouts/FavResumesList";
 import AboutUs from "@pages/AboutUs";
 import ResumeGuide from "@pages/ResumeGuide";
 import SingleResume from "@pages/SingleResume";
+import Modal from "./modals/Modal";
+import { modalContext } from "./context/store";
 
 // ROUTER
 const router = createBrowserRouter([
@@ -64,7 +66,15 @@ const router = createBrowserRouter([
 
 // FINAL RENDER
 function App(): JSX.Element {
-  return <RouterProvider router={router} />;
+  // VARIABLES
+  const modalVisibilty = modalContext((state) => state.visible);
+  // RETURN
+  return (
+    <Fragment>
+      {modalVisibilty && <Modal />}
+      <RouterProvider router={router} />
+    </Fragment>
+  );
 }
 
 export default App;

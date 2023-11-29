@@ -8,9 +8,14 @@
   grid-template-rows: 1fr;
 
   & .pdf_viewer {
+    overflow: hidden;
     height: 100%;
     width: 100%;
     background: rgb(224, 224, 224);
+    embed {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

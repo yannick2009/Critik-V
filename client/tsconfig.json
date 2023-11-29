@@ -16,7 +16,8 @@
       "@assets/*": ["./src/assets/*"],
       "@sass/*": ["./src/sass/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@containers/*": ["./src/containers/*"]
+      "@containers/*": ["./src/containers/*"],
+      "@context/*": ["./src/context/*"]
     },
 
     /* Bundler mode */

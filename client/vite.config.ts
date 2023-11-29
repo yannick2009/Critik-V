@@ -15,6 +15,7 @@ export default defineConfig({
       "@sass": "/src/sass",
       "@layouts": "/src/layouts",
       "@containers": "/src/containers",
+      "@context": "/src/context",
     },
   },
 });
