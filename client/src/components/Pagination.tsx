@@ -1,6 +1,7 @@
 import "./styles/Pagination.scss";
 
 export default function Pagination(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <div className="pagination">
       <button>

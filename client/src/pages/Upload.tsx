@@ -4,8 +4,10 @@ import { useDropzone } from "react-dropzone";
 
 // TYPE
 type IsUploadedProps = { name: string; weight: number };
+
 // DIFFERENT STATES OF THE UPLOAD FORM
 export function NofileUpload(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <Fragment>
       <i className="fa-regular fa-file-lines"></i>
@@ -16,8 +18,8 @@ export function NofileUpload(): JSX.Element {
     </Fragment>
   );
 }
-
 export function IsUploading(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <Fragment>
       <i className="fa-solid fa-file-circle-plus fa-beat"></i>
@@ -28,8 +30,8 @@ export function IsUploading(): JSX.Element {
     </Fragment>
   );
 }
-
 export function IsUploaded({ name, weight }: IsUploadedProps): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <Fragment>
       <i className="fa-solid fa-file-pdf"></i>
@@ -51,17 +53,17 @@ export default function Upload(): JSX.Element {
       },
     });
 
-  // RENDER  UPLOAD FORM
+  // ============ RENDER ============ //
   return (
     <section id="upload">
       {/* FORM TO UPLOAD THE RESUME */}
       <form>
-        {/* POST TITLE */}
+        {/* ====== POST TITLE ====== */}
         <label htmlFor="upload_title">
           Titre <span>*</span>
         </label>
         <input type="text" id="upload_title" name="upload_title" />
-        {/* PLACEMENT TYPE */}
+        {/* ====== PLACEMENT TYPE ====== */}
         <label htmlFor="upload_job_type">
           Type d'emploi <span>*</span>
         </label>
@@ -70,7 +72,7 @@ export default function Upload(): JSX.Element {
           <option value="cdd">CDD</option>
           <option value="cdi">CDI</option>
         </select>
-        {/* EXPERIENCE YEARS */}
+        {/* ====== EXPERIENCE YEARS ====== */}
         <label htmlFor="upload_job_experience">
           Niveau d'expérience <span>*</span>
         </label>
@@ -79,14 +81,14 @@ export default function Upload(): JSX.Element {
           <option value="cdd">Junior</option>
           <option value="cdi">Senior</option>
         </select>
-        {/* SCHOOL / WORK */}
+        {/* ====== SCHOOL / WORK ====== */}
         <label htmlFor="upload_establishement">Votre étbalissement</label>
         <input
           type="text"
           name="upload_establishement"
           id="upload_establishement"
         />
-        {/* RESUME FILE */}
+        {/* ====== RESUME FILE ====== */}
         <label htmlFor="upload-field">
           CV <span>*</span>
         </label>
@@ -108,10 +110,10 @@ export default function Upload(): JSX.Element {
           )}
           {!acceptedFiles[0] && !isDragActive && <NofileUpload />}
         </div>
-        {/* SUBMIT BUTTON */}
+        {/* ====== SUBMIT BUTTON ====== */}
         <button type="submit">Uploader mon CV</button>
       </form>
-      {/* CONDIFIDENTIALITY RULES */}
+      {/* ====== CONDIFIDENTIALITY RULES ====== */}
       <div id="confidentiality">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora

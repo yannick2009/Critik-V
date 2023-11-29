@@ -27,6 +27,7 @@ elit. Commodi quis doloribus, rendis provident explicabo quibusdam.
 Inventore possimus eum eligendi, non nihil dolorem.`;
 
 export default function AboutUs(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <section id="aboutUs">
       <div className="container">

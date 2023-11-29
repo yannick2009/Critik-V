@@ -1,5 +1,5 @@
-import { modalContext } from "@context/store";
 import "./styles/Modal.scss";
+import { modalContext } from "@context/store";
 import { Fragment } from "react";
 import ReactDOM from "react-dom";
 import ResumeInfoModal from "./ResumeInfoModal";

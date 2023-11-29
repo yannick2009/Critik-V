@@ -1,7 +1,7 @@
-import ReviewsComments from "@/components/ReviewsComments";
+import ReviewsComments from "@components/ReviewsComments";
 import "./styles/SingleResume.scss";
 import resumePDF from "@assets/docs/resume.pdf";
-import { modalContext } from "@/context/store";
+import { modalContext } from "@context/store";
 
 export default function SingleResume(): JSX.Element {
   // ========= VARIABLE ========== //

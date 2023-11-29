@@ -2,6 +2,7 @@ import "./styles/ReviewComments.scss";
 import Comment from "./Comment";
 
 export default function ReviewsComments(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <div className="reviews__comments">
       <div className="reviews__comments__list">

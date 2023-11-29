@@ -3,6 +3,7 @@ import Resume from "@components/Resume";
 import Pagination from "@components/Pagination";
 
 export default function ResumesList() {
+  // ============ RENDER ============ //
   return (
     <div className="resumes__list">
       <Resume />

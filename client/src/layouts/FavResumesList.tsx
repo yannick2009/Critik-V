@@ -1,7 +1,8 @@
 import "./styles/ResumesList.scss";
-import Empty from "@/components/Empty";
+import Empty from "@components/Empty";
 
 export default function FavResumesList(): JSX.Element {
+  // ============ RENDER =========== //
   return (
     <div className="resumes__list">
       <Empty

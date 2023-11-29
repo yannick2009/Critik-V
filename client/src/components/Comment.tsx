@@ -1,6 +1,7 @@
 import "./styles/Comment.scss";
 
-export default function Comment() {
+export default function Comment(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <div className="comment">
       <div className="comment__header">

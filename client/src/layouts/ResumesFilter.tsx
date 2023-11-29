@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function ResumesFilter() {
+  // ============ RENDER ============ //
   return (
     <div id="resumes__filter">
       <div className="part__1">

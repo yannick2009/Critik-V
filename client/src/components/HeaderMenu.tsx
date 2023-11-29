@@ -1,8 +1,9 @@
 import "./styles/HeaderMenu.scss";
-import Logo from "@/assets/img/critik-v-logo.svg";
+import Logo from "@assets/img/critik-v-logo.svg";
 import { NavLink } from "react-router-dom";
 
-function HeaderMenu() {
+function HeaderMenu(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <div id="header__menu">
       <NavLink to="/">

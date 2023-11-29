@@ -6,6 +6,7 @@ type EmptyProps = {
 };
 
 export default function Empty({ label, text }: EmptyProps): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <div className="empty">
       <i className="fa-regular fa-file-lines"></i>

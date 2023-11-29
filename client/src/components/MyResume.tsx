@@ -1,6 +1,7 @@
 import "./styles/Resume.scss";
 
 export default function MyResume(): JSX.Element {
+  // ============ RENDER ============ //
   return (
     <div className="resume">
       <div className="part__1">
